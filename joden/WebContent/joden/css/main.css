@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+#main{
+	width: 1200px;
+	margin:30px auto;
+	text-align: center;
+}
+
+#main_title{
+	
+	width: 800px;
+	height:100px;
+	border:3px solid #D6D4A6;
+	font-weight: bold;
+	text-align: center;
+	line-height:40px;
+	font-size:20pt;
+
+
+}
