@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+#part_first{
+	display: flex;
+	width: 1200px;
+	height: 600px;
+	border-top:3px solid #DBDBDB;
+	border-bottom:3px solid #DBDBDB;
+	text-align:left;
+	margin:30px auto;
+}
+
+.part_first_image{
+	width: 450px;
+	height: 450px;
+	margin-top: 30px;
+	padding: 0px;
+	float: left;
+	border-left: none;
+}
+.img{
+	width: 450px;
+	height: 450px;
+	align-items: center;
+}
+
+.part_first_detail{
+	width: 450px;
+	height: 450px;
+	margin:10px auto;
+	padding: 0px;
+	float: right;
+	border-right: none;
+}
+
+.font_main{
+	font-size: 18pt;
+	font-family:굴림;
+	font-weight: bold;
+}
+
+.font_detail{
+	font-size: 13pt;
+	font-family:굴림;
+	font-weight: normal;
+}
+
+.cate_title{
+	
+width: 90%;
+height: 60px;
+margin: 0;
+padding: 0;
+border-bottom: 1px solid #e7e7e7;
+color: #202429;
+font-size: 18px;
+line-height: 60px;
+font-weight: 600;
+
+}

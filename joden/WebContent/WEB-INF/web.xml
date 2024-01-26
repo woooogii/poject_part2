@@ -25,22 +25,45 @@
   </filter-mapping>
   
   
-
-  <servlet>
- 	<servlet-name>jodenServlet</servlet-name>
-  	<servlet-class>com.gos.GosServlet3</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>jodenServlet</servlet-name>
-  	<!-- 메인 -->
-  	<url-pattern>/cabin/*</url-pattern>
-  	<!-- 카테고리, 아이템별 -->
-  	<url-pattern>/cabin/shop/*</url-pattern>
-  	<!-- 로그인, 가입, 마이페이지 -->
-  	<url-pattern>/cabin/membership/*</url-pattern>
-  	<!-- 결제 -->
-  	<url-pattern>/cabin/pay/*</url-pattern>
+<!-- 지은 -->
+	<servlet>
+		<servlet-name>jodenServlet1</servlet-name>
+		<servlet-class>com.gos.ProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jodenServlet1</servlet-name>
+		<url-pattern>/cabin/shop/*</url-pattern>
   </servlet-mapping>
+
+<!-- 로그인, 가입, 마이페이지 -->
+	<servlet>
+		<servlet-name>jodenServlet</servlet-name>
+  		<servlet-class>com.gos.UserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jodenServlet</servlet-name>
+		<url-pattern>/cabin/membership/*</url-pattern>
+	</servlet-mapping>
+  
+<!--   결제 -->
+	<servlet>
+		<servlet-name>jodenServlet2</servlet-name>
+		<servlet-class>com.gos.PayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jodenServlet2</servlet-name>
+		<url-pattern>/cabin/pay/*</url-pattern>
+	</servlet-mapping>
+
+<!-- 메인 -->
+	<servlet>
+		<servlet-name>jodenServlet3</servlet-name>
+		<servlet-class>com.gos.MainServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>jodenServlet3</servlet-name>
+		<url-pattern>/cabin/*</url-pattern>
+	</servlet-mapping>
   
   
   
